@@ -13,14 +13,9 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		// TODO
-		HBox hbox=new HBox();
-		hbox.setSpacing(10);
-		hbox.setPadding(new Insets(10));
-		hbox.setAlignment(Pos.CENTER);
 		StartPane startPane=new StartPane();
-		hbox.getChildren().add(startPane);
-		Scene scene=new Scene(hbox);
-		primaryStage.setScene(scene);
+		Scene startScene=new Scene(startPane);
+		primaryStage.setScene(startScene);
 		primaryStage.setTitle("BOMB IT");
 		primaryStage.setResizable(false);
 		primaryStage.sizeToScene();
