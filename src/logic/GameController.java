@@ -4,6 +4,7 @@ import entity.Player;
 
 public class GameController {
 	private static Player player1,player2;
+	private static boolean isWin=false;
 	private static GameMap gameMap;
 	
 	public static void initializeMap() {
@@ -11,8 +12,13 @@ public class GameController {
 		player2 = new Player("Nut",3,1);
 		gameMap = new GameMap();
 	}
-	public boolean isWin() {
-		if(player1.l)
-	}
 	
+	public static boolean isWin() {
+		return isWin;
+	}
+
+	public static void setWin(boolean isWin) {
+		GameController.isWin = isWin;
+	}
+
 }
